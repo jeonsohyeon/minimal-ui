@@ -23,7 +23,8 @@
     "typeRoots": ["node_modules/@types"],
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "types": ["react", "jest"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules/**/*", "build", "jest", "**/*.stories.tsx", "**/*.test.tsx"]
