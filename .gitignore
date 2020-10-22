@@ -1,0 +1,24 @@
+# npm 디버그 기록
+npm-debug.log*
+package-lock.json
+yarn-error.log
+
+# 프로젝트 의존성
+node_modules
+
+# macOS 폴더 속성
+.DS_Store
+
+# 임시 파일
+*.tmp
+*.bak
+
+tmp/**
+tmp/**/*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
