@@ -4,7 +4,8 @@ import postcss from 'rollup-plugin-postcss';
 import url from 'rollup-plugin-url';
 import { terser } from 'rollup-plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
-const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+import pkg from './package.json';
+const extensions = ['.js', '.jsx', '.ts', '.tsx', '.json'];
 
 // babel-preset-react-app를 사용한다면 BABEL_ENV를 필수로 설정
 process.env.BABEL_ENV = 'production';
@@ -13,7 +14,7 @@ export default {
   input: './src/index.ts',
   output: [
     {
-      file: package.module,
+      file: pkg.module,
       format: 'es',
     },
   ],
